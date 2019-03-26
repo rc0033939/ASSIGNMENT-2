@@ -72,7 +72,7 @@ namespace ASSIGNMENT_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //
+            // we set the values to zero before the statements.
             double resistance5 = 0.0;
             double resistance6 = 0.0;
             double resistance7 = 0.0;
@@ -115,14 +115,14 @@ namespace ASSIGNMENT_2
                             {
                                 resistance8 = double.Parse(textBox9.Text);
                             }
-
+// positive infinity is used to replace having a zero
                             
                
  
 
                 Double total_resistance =(1.0/ (1.0/resistance5 + 1.0/resistance6 + 1.0/resistance7 + 1.0/resistance8));
                 MessageBox.Show("total_resistance = " + total_resistance.ToString("0.00") + "ohms");
-                //
+                //this code calculates the total parellel.
             }
             catch
             {
